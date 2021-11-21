@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by RealSGII2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main data-tab-index="0">
+	<section class="container">
+		<h1>
+			Not-A-Scam IQ Test
+		</h1>
+
+		<p>
+			Easily get your IQ with a test that only contains a single question! It's just a math question, so be prepared to do small calculations.
+		</p>
+	</section>
+
+	<section class="submit container">
+		<button class="submit" onClick="stepUpTo(1)">
+			<span>Start</span>
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+				<line x1="5" y1="12" x2="19" y2="12"></line>
+				<polyline points="12 5 19 12 12 19"></polyline>
+			</svg>
+		</button>
+	</section>
+</main>
+
+<main data-tab-index="1" class="goDown hidden">
+	<section class="card">
+		<header>
+			<h2 class="question">
+				Using the linear function below, what is \(f^{-1}(x)\) if \(x = 4\)?
+			</h2>
+		</header>
+
+		<section class="equation box">
+			\(f(x) = \frac{4}{5}x - 2\)
+		</section>
+
+		<main class="row">
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<button class="option" data-choice="7.5">
+					\(7.5\)
+				</button>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<button class="option" data-choice="6.25">
+					\(6.25\)
+				</button>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<button class="option" data-choice="7">
+					\(7\)
+				</button>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<button class="option" data-choice="6.75">
+					\(6.75\)
+				</button>
+			</div>
+		</main>
+	</section>
+
+	<section class="submit container">
+		<button class="submit" disabled id="submit" onClick="stepUpTo(2)">
+			<span>Submit</span>
+
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+				<line x1="5" y1="12" x2="19" y2="12"></line>
+				<polyline points="12 5 19 12 12 19"></polyline>
+			</svg>
+		</button>
+	</section>
+</main>
+
+<main data-tab-index="2" class="goDown hidden">
+	<section class="container finish" style="text-align: center;">
+		<h1>
+			The results are in...
+		</h1>
+
+		<p>
+			You score with <b id="iq">0</b> <b>IQ</b>!
+		</p>
+
+		<p>
+			You are in the <b id="p">0%</b> percentile!
+		</p>
+
+		<div class="progress">
+			<div></div>
+		</div>
+
+		<h4>You are a...</h4>
+		<h3 id="t">
+			Perfect Idiot
+		</h3>
+	</section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css");
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f6f8;
+}
+
+* {
+  box-sizing: border-box;
+  font: inherit;
+}
+
+section.container {
+  width: 100%;
+  max-width: 780px;
+}
+section.container.submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+section.container.finish {
+  margin-top: 20vh;
+}
+section.container.finish.fadeUp h1,
+section.container.finish.fadeUp p,
+section.container.finish.fadeUp h4 {
+  -webkit-animation: fadeUp 175ms ease forwards;
+          animation: fadeUp 175ms ease forwards;
+}
+section.container.finish.fadeUp .progress {
+  -webkit-animation: fadeUp 175ms ease forwards 1200ms, jump 250ms ease forwards 1700ms;
+          animation: fadeUp 175ms ease forwards 1200ms, jump 250ms ease forwards 1700ms;
+}
+section.container.finish.fadeUp.fail .progress div {
+  -webkit-animation: progDown 350ms linear forwards 1350ms;
+          animation: progDown 350ms linear forwards 1350ms;
+}
+section.container.finish.fadeUp.success .progress div {
+  -webkit-animation: progUp 350ms linear forwards 1350ms;
+          animation: progUp 350ms linear forwards 1350ms;
+}
+section.container.finish.fadeUp h3 {
+  -webkit-animation: jumpSpin 875ms ease forwards;
+          animation: jumpSpin 875ms ease forwards;
+}
+section.container.finish h1,
+section.container.finish p,
+section.container.finish h4,
+section.container.finish h3 {
+  transform: translateY(24px);
+  opacity: 0;
+}
+section.container.finish h1:nth-child(1),
+section.container.finish p:nth-child(1),
+section.container.finish h4:nth-child(1),
+section.container.finish h3:nth-child(1) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+section.container.finish h1:nth-child(1) div,
+section.container.finish p:nth-child(1) div,
+section.container.finish h4:nth-child(1) div,
+section.container.finish h3:nth-child(1) div {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+section.container.finish h1:nth-child(2),
+section.container.finish p:nth-child(2),
+section.container.finish h4:nth-child(2),
+section.container.finish h3:nth-child(2) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+section.container.finish h1:nth-child(2) div,
+section.container.finish p:nth-child(2) div,
+section.container.finish h4:nth-child(2) div,
+section.container.finish h3:nth-child(2) div {
+  -webkit-animation-delay: 550ms;
+          animation-delay: 550ms;
+}
+section.container.finish h1:nth-child(3),
+section.container.finish p:nth-child(3),
+section.container.finish h4:nth-child(3),
+section.container.finish h3:nth-child(3) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+section.container.finish h1:nth-child(3) div,
+section.container.finish p:nth-child(3) div,
+section.container.finish h4:nth-child(3) div,
+section.container.finish h3:nth-child(3) div {
+  -webkit-animation-delay: 950ms;
+          animation-delay: 950ms;
+}
+section.container.finish h1:nth-child(4),
+section.container.finish p:nth-child(4),
+section.container.finish h4:nth-child(4),
+section.container.finish h3:nth-child(4) {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+section.container.finish h1:nth-child(4) div,
+section.container.finish p:nth-child(4) div,
+section.container.finish h4:nth-child(4) div,
+section.container.finish h3:nth-child(4) div {
+  -webkit-animation-delay: 1350ms;
+          animation-delay: 1350ms;
+}
+section.container.finish h1:nth-child(5),
+section.container.finish p:nth-child(5),
+section.container.finish h4:nth-child(5),
+section.container.finish h3:nth-child(5) {
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+}
+section.container.finish h1:nth-child(6),
+section.container.finish p:nth-child(6),
+section.container.finish h4:nth-child(6),
+section.container.finish h3:nth-child(6) {
+  -webkit-animation-delay: 2900ms;
+          animation-delay: 2900ms;
+}
+section.container.finish h1:nth-child(7),
+section.container.finish p:nth-child(7),
+section.container.finish h4:nth-child(7),
+section.container.finish h3:nth-child(7) {
+  -webkit-animation-delay: 3300ms;
+          animation-delay: 3300ms;
+}
+section.container.finish h1:nth-child(8),
+section.container.finish p:nth-child(8),
+section.container.finish h4:nth-child(8),
+section.container.finish h3:nth-child(8) {
+  -webkit-animation-delay: 3700ms;
+          animation-delay: 3700ms;
+}
+section.container.finish h1:nth-child(9),
+section.container.finish p:nth-child(9),
+section.container.finish h4:nth-child(9),
+section.container.finish h3:nth-child(9) {
+  -webkit-animation-delay: 4100ms;
+          animation-delay: 4100ms;
+}
+section.container.finish h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+section.container.finish p {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 1rem;
+}
+section.container.finish h4 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+section.container.finish h3 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 0;
+  transform: scale(0);
+  opacity: 1;
+}
+section.container.finish .progress {
+  transform: translateY(24px);
+  opacity: 0;
+  display: inline-block;
+  margin: 1rem 0;
+  height: 12px;
+  width: 300px;
+  border-radius: 999px;
+  overflow: hidden;
+  background-color: #d3d3d4;
+}
+section.container.finish .progress div {
+  width: 50%;
+  height: 100%;
+  background-color: #f2b832;
+}
+
+@-webkit-keyframes fadeUp {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes progDown {
+  from {
+    width: 50%;
+    background-color: #f2b832;
+  }
+  to {
+    width: 0;
+    background-color: #f23232;
+  }
+}
+@keyframes progDown {
+  from {
+    width: 50%;
+    background-color: #f2b832;
+  }
+  to {
+    width: 0;
+    background-color: #f23232;
+  }
+}
+@-webkit-keyframes progUp {
+  from {
+    width: 50%;
+    background-color: #f2b832;
+  }
+  to {
+    width: 100%;
+    background-color: #32f285;
+  }
+}
+@keyframes progUp {
+  from {
+    width: 50%;
+    background-color: #f2b832;
+  }
+  to {
+    width: 100%;
+    background-color: #32f285;
+  }
+}
+@-webkit-keyframes jump {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  to {
+    transform: none;
+  }
+}
+@keyframes jump {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  to {
+    transform: none;
+  }
+}
+@-webkit-keyframes jumpSpin {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.25) rotate(5deg);
+  }
+  40% {
+    transform: scale(1.25) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1.25) rotate(5deg);
+  }
+  60% {
+    transform: scale(1.25) rotate(-5deg);
+  }
+  70% {
+    transform: scale(1.25) rotate(5deg);
+  }
+  80% {
+    transform: scale(1.25) rotate(-5deg);
+  }
+  90% {
+    transform: scale(1.25);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes jumpSpin {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.25) rotate(5deg);
+  }
+  40% {
+    transform: scale(1.25) rotate(-5deg);
+  }
+  50% {
+    transform: scale(1.25) rotate(5deg);
+  }
+  60% {
+    transform: scale(1.25) rotate(-5deg);
+  }
+  70% {
+    transform: scale(1.25) rotate(5deg);
+  }
+  80% {
+    transform: scale(1.25) rotate(-5deg);
+  }
+  90% {
+    transform: scale(1.25);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+section.card {
+  width: 100%;
+  max-width: 780px;
+  border-radius: 12px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+section.card header {
+  padding: 1.5rem 1.5rem 1rem;
+}
+section.card main {
+  padding: 1.5rem;
+}
+section.card .box {
+  position: relative;
+  padding: 1rem 1.5rem;
+  background-color: #f5f6f8;
+}
+section.card .box.equation {
+  font-family: "Times New Roman";
+  font-size: 20px;
+}
+
+.input {
+  position: relative;
+  display: inline-flex;
+  height: 48px;
+  background-color: #f5f6f8;
+  border-radius: 4px;
+  width: 256px;
+  transition: background-color 175ms ease;
+}
+.input:hover, .input.focus {
+  background-color: #e9ebf0;
+}
+.input.fill span, .input.focus span {
+  transform: translate(-17.5%, -110%) scale(0.75);
+}
+.input.focus span {
+  opacity: 1;
+  color: #1a81fa;
+}
+.input span {
+  position: absolute;
+  top: 50%;
+  left: 0.875rem;
+  transform: translate(0, -50%);
+  font-weight: 700;
+  font-size: 15px;
+  opacity: 0.5;
+  transition: 175ms ease;
+}
+.input input {
+  outline: 0;
+  width: 100%;
+  height: 24px;
+  margin-top: 1.125rem;
+  padding: 0 0.6rem;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+}
+
+.question,
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.question span,
+h1 span {
+  color: #1a81fa;
+}
+
+button {
+  cursor: pointer;
+}
+button.submit {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  border: solid 4px rgba(255, 255, 255, 0.2);
+  height: 56px;
+  padding: 0 1.25rem 0 1.5rem;
+  background-color: #fff;
+  border-radius: 999px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+}
+button.submit svg {
+  margin-left: 0.75rem;
+  width: 20px;
+}
+button.submit:enabled:hover {
+  background-color: #f29932;
+  color: #fff;
+}
+button.submit:disabled {
+  box-shadow: none;
+  opacity: 0.5;
+  cursor: initial !important;
+}
+button.option {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  border: solid 4px rgba(255, 255, 255, 0.2);
+  height: 56px;
+  padding: 0 1.25rem 0 1.5rem;
+  background-color: #f5f6f8;
+  border-radius: 8px;
+}
+button.option svg {
+  margin-left: 0.75rem;
+  width: 20px;
+}
+button.option:hover, button.option.selected, button.option:focus {
+  background-color: #f29932;
+  color: #fff;
+}
+
+body > main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 175ms ease-out;
+}
+body > main.goUp, body > main.goDown {
+  opacity: 0;
+}
+body > main.goUp {
+  transform: translateY(-18px);
+}
+body > main.goDown {
+  transform: translateY(18px);
+}
+body > main.hidden {
+  display: none;
+}
+
+b {
+  font-weight: 700;
+}
